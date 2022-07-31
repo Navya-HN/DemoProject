@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CheckShoppingV1" >
+
+    <listeners>
+        <listener class-name="com.shopping.utilities.Reporting" />
+    </listeners>
+
+
+    <test name="Shopping Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <!--<class name="com.shopping.testCases.TC_Login_001" />-->
+            <!--<class name="com.shopping.testCases.TC_SearchDDT_003" />-->
+            <class name="com.shopping.testCases.TC_SearchProduct_002" />
+
+        </classes>
+
+    </test>
+
+</suite>
